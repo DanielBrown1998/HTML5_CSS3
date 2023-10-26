@@ -1,0 +1,301 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Teko-Bold';
+    src: url('../fonts/Teko-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SedgwickAveDisplay';
+    src: url('../fonts/SedgwickAveDisplay-Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --cor0:  rgb(165, 161, 161);
+    --cor1: rgb(0.13, 0.13, 0.13);
+    --cor2: rgb(94, 94, 94);
+    --cor3: rgba(0, 10, 95, 0.795);
+    --cor4: goldenrod;
+    --font1: 'Teko-Bold';
+    --font2: 'SedgwickAveDisplay';
+}
+
+body{
+    box-sizing: border-box;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: var(--cor0);
+    background-image: url("muro-de-concreto-cinzento-claro.jpg");
+}   
+header{
+    height: 60px;
+    background-color: transparent;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+/*Section Pcep*/
+
+section.pcep img{
+    padding: 10px;
+    display: block;
+    margin: auto;
+    max-width: 150px;
+    max-height: 150px;
+    min-width: 75px;
+    min-height: 75px;
+}
+
+section.pcep p{
+    
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--cor1);
+    font-family: var(--font1);
+    width: auto;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+
+}
+
+/*Section Calculator*/
+
+section.curriculum *::selection{
+    background-color: var(--cor0);
+    color: var(--cor4);
+}
+
+section.calculator{
+    background-image: url('parede-de-tijolo-preto-com-fundo-texturizado.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px 0 30px 0;
+    margin: 0px 0 30px 0;
+    color: var(--cor0);
+}
+section.calculator  h2{
+    font-family: var(--font2);
+    text-align: center;
+    font-size: 3em;
+}
+
+section.calculator p{
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: white;
+    font-family: var(--font1);
+    width: auto;
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+section.calculator img{
+    padding: 5px;
+    border: 3px groove var(--cor4);
+    display: block;
+    margin: auto;
+    width: 55vw;
+    max-width: 200px;
+    min-height: 400px;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+section.calculator img:hover{
+    transform: translate(-5%, -2%);
+    transition: transform .5s;
+}
+
+section.calculator a{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    color: var(--cor4);
+    text-decoration: none;
+    font-family: var(--font1);
+}
+section.calculator a:hover{
+    cursor: cell;
+}
+
+/*Section Curriculum*/
+
+section.curriculum *::selection{
+    background-color: var(--cor0);
+    color: var(--cor3);
+}
+
+section.curriculum{
+    position: static;
+    padding: 0px, 30px;
+    display: block;
+    min-width: 300px;
+    width: 60vw;
+    box-shadow: 5px 5px 20px rgb(.5, .5, .5);
+    border-radius: 5px;
+    max-width: 1100px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.582);
+}
+section.curriculum h3{
+    font-family: var(--font1);
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color:var(--cor2);
+}
+section.curriculum ul{
+    color: var(--cor2);
+    padding: 10px;
+    text-align: justify;
+    list-style-type: none;
+    list-style-position: inside;
+}
+section.curriculum a{  
+    display: inline-block;
+    margin: auto;
+    font-size: 1.1em;
+    font-weight: lighter;
+    padding: 1px;
+    text-decoration: double;
+    text-align: center;
+    font-family: var(--font1);
+    font-style: normal;
+    color: var(--cor1);
+}
+section.curriculum a:hover{
+    color: var(--cor2);
+    cursor: pointer;
+}
+section.curriculum a::after{
+    color: var(--cor1);
+}
+
+section.curriculum #login{
+    color: var(--cor2);
+    font-family: var(--font2);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5em;
+    padding: 10px;
+    text-align: center;
+}
+section.curriculum form{
+    border: 5px solid var(--cor1);
+    border-radius: 10%;
+    background-color: var(--cor0);
+    display: block;
+    padding: 05%;
+    margin: 10% 50%;
+    max-width: 400px;
+    min-width: 200px;
+    max-height: 400px;
+    min-width: 200px;
+    transform: translate(-50%);
+}
+section.curriculum form>label{
+    padding: 1%;
+    display: block;
+    text-align: left;
+    font-family: var(--font1);
+    font-weight: bold;
+    color: white;
+}
+section.curriculum form>label:hover{
+    color: var(--cor4);
+}
+section.curriculum form>legend{
+    text-align: center;
+    font-family: var(--font1);
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+section.curriculum form>legend:hover{
+    color: var(--cor4);
+}
+section.curriculum input{
+    width: 200px;
+    background-color: transparent;
+    text-align: center;
+    border: 0px solid transparent;
+    border-bottom: 1px solid white;
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 0 0 0 0;
+    border: none, none, 1px, none;
+    outline: 0;
+}
+section.curriculum #button{
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    padding: 0% 5%;
+    margin: 10% 50%;
+    font-family: var(--font1);
+    border: None;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+    transform: translate(-50%);
+    background-color: var(--cor3);
+}
+section.curriculum #button:hover{
+    background-color: var(--cor1);
+    transform: translate(-52%);
+    transition: .5s;
+    color: var(--cor4);
+    
+}
+aside{
+    padding: 50px;
+    margin: auto;
+    display: block;
+}
+img.logo{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+img.logo:hover{
+    border-color: var(--cor4);
+    transform: translate(-5%, -5%);
+    transition: 0.5s;
+}
+div.contatos{
+    display: block;
+    margin: auto;
+    width: max-content;
+}
+footer{
+    text-align: center;
+    color: var(--cor2);
+    font-size: larger;
+    background-color: transparent;
+    margin-top: 5%;
+    width: 100vw;
+    padding: 10px 0px;
+}
