@@ -22,6 +22,7 @@
     --cor2: rgb(94, 94, 94);
     --cor3: rgba(0, 10, 95, 0.795);
     --cor4: goldenrod;
+    --cor5: rgba(53, 2, 2, 0.788);
     --font1: 'Teko-Bold';
     --font2: 'SedgwickAveDisplay';
 }
@@ -57,6 +58,7 @@ section.pcep img{
     max-height: 150px;
     min-width: 75px;
     min-height: 75px;
+    filter: drop-shadow(10px 8px 6px var(--cor5));
 }
 
 section.pcep p{
@@ -74,11 +76,6 @@ section.pcep p{
 }
 
 /*Section Calculator*/
-
-section.curriculum *::selection{
-    background-color: var(--cor0);
-    color: var(--cor4);
-}
 
 section.calculator{
     background-image: url('parede-de-tijolo-preto-com-fundo-texturizado.jpg');
@@ -117,24 +114,27 @@ section.calculator img{
     min-height: 400px;
     height: 40vh;
     border-radius: 10px;
+    filter: drop-shadow(10px 8px 6px var(--cor4));
 }
 
 section.calculator img:hover{
     transform: translate(-5%, -2%);
-    transition: transform .5s;
+    filter: drop-shadow(13px 11px 9px var(--cor4));
+    transition: transform 1s;
 }
 
 section.calculator a{
     display: block;
+    width: max-content;
     margin: auto;
     text-align: center;
-    padding: 5px;
+    padding: 25px 0px 0px 0px;
     color: var(--cor4);
     text-decoration: none;
     font-family: var(--font1);
 }
 section.calculator a:hover{
-    cursor: cell;
+    cursor: crosshair;
 }
 
 /*Section Curriculum*/
