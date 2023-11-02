@@ -1,0 +1,50 @@
+@charset "UTF-8";
+*{
+    margin: 0%;
+    padding: 0%;
+}
+:root{
+    --cor: rgb(212, 5, 5);
+}
+html{
+    background-color: rgba(0, 0, 0, 0.897);
+}
+body{
+    width: 100vw;
+    height: 50vh;
+    background-image: url("../portfólio/estilos/funo_netflix.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: local;
+}
+header{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    padding: 15px calc(70vw - 150px) 15px 20px;
+    text-transform: uppercase;
+}
+a{
+    font-size: 1.1em;
+    font-family: sans-serif;
+    color: var(--cor);
+    text-decoration: none;
+}
+
+h4.in a{
+    background-color: var(--cor);
+    border-radius: 3px;
+    padding: 5px;
+    color: white;
+}
+.in{
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    width: 100px;
+    height: 20px;
+    padding: 25px 25px 25px 25px;
+}
