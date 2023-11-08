@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        html{
+            overflow: hidden;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+        }
+        table{
+            margin: 50vw auto;
+            border-collapse: collapse;
+            width: 50vw;
+            height: 30vh;
+            transform: translateY(-50%);
+        }
+        table td, table th{
+            vertical-align: middle;
+            text-align: center;
+            padding: 2px 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <table>
+            <caption>minha_tabela</caption>
+            <thead>
+                <tr>
+                    <th>titulo_1</th>
+                    <th>titulo_2</th>
+                    <th>titulo_3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0, 0</td>
+                    <td>0, 1</td>
+                    <td>0, 2</td>
+                </tr>
+        
+                <tr>
+                    <td>1, 0</td>
+                    <td>1, 1</td>
+                    <td>1, 2</td>
+                </tr>
+        
+                <tr>
+                    <td>2, 0</td>
+                    <td>2, 1</td>
+                    <td>2, 2</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Daniel Brown</td> 
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
