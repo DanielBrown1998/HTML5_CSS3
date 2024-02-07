@@ -7,6 +7,7 @@
     font-family: sans-serif;
 }
 @media all{
+    
     h1{
         text-align: center;
     }
@@ -29,18 +30,21 @@
     }
     section.grid{
         display: grid;
-        grid-template-rows: 40px 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 20vh;
         grid-template-columns: 100px 1fr 25vw;
         grid-template-areas: 
         'nav article aside' 
         'nav article aside'
         'nav article aside'
         'footer footer footer';
-        
+        min-height: 100vh;
     }
     menu.menu{
         grid-area: nav;
         background-color: aquamarine;
+    }
+    menu.menu a{
+        display: block;
     }
     article{
         grid-area: article;
