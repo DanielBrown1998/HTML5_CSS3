@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+:root{
+    --font_montserrat: 'Montserrat', sans-serif;
+    --font_sans: "Open Sans", sans-serif;
+    --font_sans_bold: "Open Sans Bold", sans-serif;
+    --font_sans_italic: "Open Sans Italic", sans-serif;
+    --primary_color: #0A1128;
+    --white-color: white;
+    --light-gray-color: #EEEEEE;
+    --gap: 3rem;
+}

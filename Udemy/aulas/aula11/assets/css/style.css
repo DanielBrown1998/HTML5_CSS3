@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+
+.intro-content{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: var(--gap);
+    height: 90vh;
+}
+
+
+.intro-text-content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.intro-text-content h2{
+    font-size: 6rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+}
+
+.intro-img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.intro-img img{
+
+    max-width: 600px;
+    width: 40vw;
+    min-width: 300px;
+
+    max-width: 600px;
+    height: 40vw;
+    min-height: 300px;
+}
+
+.apple-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--gap);
+}
+
+
+.apple-content h2{
+    text-transform: uppercase;
+    font-size: 4.5rem;
+
+}
+
+.apple-content p{
+    max-width: 80rem;
+}
+
+.apple-content img{
+
+    max-width: 600px;
+    width: 40vw;
+    min-width: 300px;
+
+    max-width: 600px;
+    height: 40vw;
+    min-height: 300px;
+
+}

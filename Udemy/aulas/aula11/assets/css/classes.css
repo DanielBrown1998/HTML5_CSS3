@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.section{
+    min-height: 100vh;
+}
+
+.white-bg{
+    background-color: var(--white-color);
+    background-size: cover;
+}
+
+.second-bg{
+    background-image: url('../images/endless-constellation.svg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-bg{
+    background-image: url('../images/confetti-doodles.svg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: var(--white-color);
+}
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: var(--gap);
+}
