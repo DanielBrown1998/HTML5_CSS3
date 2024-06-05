@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1.2rem;
+}
+
+
+.header{
+    background-color: slategray;
+    padding: 3vh;
+    text-align: center;
+    color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 0 1vh 0;
+    background: linear-gradient(rgb(98, 121, 145), slategray, rgb(127, 133, 139), white);
+}
+
+.section-one{
+    padding: 2vh;
+    background-color: tan;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+.section-one p{
+    text-align: left;
+}
+.section-two{
+    padding: 2vh;
+    text-align: end;
+    margin-bottom: 1vh;
+    background-color: tomato;
+}
+.section-two p{
+    text-align: center;
+    font-size: medium;
+}
