@@ -1,0 +1,189 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'Silkscreen';
+    src: url('../fonts/Silkscreen-Regular.ttf');
+}
+@font-face {
+    font-family: 'Teko';
+    src: url('../fonts/Teko-Regular.ttf');
+}
+:root{
+    --primary-color: #8f8f8f;
+    --secondary-color: #5658b1c7;    
+    --background-color: #cac6c6a8;
+    --text-color: #131212;
+    --font-title-color: #fff;
+    --font-color: #141414;
+    --logo-color: rgba(202, 15, 15, 0.479);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Teko', 'sans-serif';
+    color: var(--font-color);
+}
+html{
+    overflow-x: hidden;
+    background-image: url('../images/pc-hardware1.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+html{
+    background-color: var(--primary-color);
+}
+header.top{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    height: 30px;
+    position: sticky;
+    top: 0;
+    padding: 10px 20px;
+    background: linear-gradient(
+    var(--primary-color), 
+    var(--background-color), 
+    transparent);
+}
+header.top h2{
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--logo-color);
+}
+a.login{
+    text-decoration: none;
+    font-family: 'Teko', sans-serif;
+    color: var(--background-color);
+    padding: 5px 10px;
+    border: 1px solid var(--background-color);
+    border-radius: 5px;
+}
+a.login:hover{
+    background-color: var(--primary-color);
+    border-radius: 1px;
+    border-color: var(--font-title-color);
+    color: var(--font-title-color);
+    transform: translate(-2px, -2px);
+    transition: all 100ms;
+}
+main.conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+}
+header.title{
+    font-family: var(--font-title);
+    font-size: 1.rem;
+    text-align: center;
+    padding: 5vh;
+}
+header.title h1{
+    font-family: 'Silkscreen';
+    color: var(--font-title-color);
+}
+img.logo{
+    width: 100px;
+    filter: drop-shadow(1px 1px 7px rgb(21, 18, 228));
+}
+section.content{
+    margin: .5vh;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    padding: 15vh;
+}
+fieldset.box-data{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    padding: 20px;
+    background-color: var(--background-color);
+    border: 1px solid var(--background-color);
+    border-radius: 10px;
+    min-width: 400px;
+    box-shadow: 7px 1px 8px 1px var(--background-color);
+}
+input#password{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid var(--text-color);
+}
+input#password:active{
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid var(--text-color);
+}
+label{
+    font-size: 1.3rem;
+}
+input#matricula{
+    margin: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid var(--text-color);
+}
+input#matricula:active{
+    background-color: transparent;
+    border: 0px solid transparent;
+    border-bottom: 1px solid var(--text-color);
+}
+div.bt-box{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+input#submit{
+    background-color: transparent;
+    padding: 2px 10px;
+    font-size: 1em;
+}
+input#submit:hover{
+    background-color: var(--background-color);
+    border-color: var(--font-title-color);
+    transform: translate(-1px, -1px);
+    transition: all 0.1s;
+}
+button{
+    background-color: transparent;
+    color: var(--font-title-color);
+    margin: 20px 0px;
+    border: 0px solid transparent;
+}
+button:hover{
+    color: var(--secondary-color);
+    transition: all 100ms;
+}
+
+footer.info{
+    display: flex;
+    justify-content: center;
+}
+footer.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+}
+@media screen and (min-width: 800px) {
+    html{
+        background-image: None;
+        background-color: var(--primary-color);
+    }
+    img.logo{
+        width: 200px;
+    }
+}
