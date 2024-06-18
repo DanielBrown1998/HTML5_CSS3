@@ -8,13 +8,13 @@
     src: url('../fonts/Teko-Regular.ttf');
 }
 :root{
-    --primary-color: #8f8f8f;
+    --primary-color: #000000;
     --secondary-color: #5658b1c7;    
     --background-color: #cac6c6a8;
     --text-color: #131212;
     --font-title-color: #fff;
     --font-color: #141414;
-    --logo-color: rgba(202, 15, 15, 0.479);
+    --logo-color: rgba(250, 6, 6, 0.774);
 }
 *{
     margin: 0;
@@ -22,35 +22,52 @@
     font-family: 'Teko', 'sans-serif';
     color: var(--font-color);
 }
-html{
+@media all {
+    html{
     overflow-x: hidden;
     background-image: url('../images/pc-hardware1.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
-html{
     background-color: var(--primary-color);
 }
 header.top{
     display: flex;
     justify-content: space-between;
     text-align: center;
-    height: 30px;
+    height: 5vh;
+    max-height: 100px;
     position: sticky;
     top: 0;
     padding: 10px 20px;
-    background: linear-gradient(
-    var(--primary-color), 
-    var(--background-color), 
-    transparent);
+    background: linear-gradient(var(--background-color),var(--primary-color),transparent);
 }
 header.top h2{
     font-family: 'Teko', sans-serif;
     text-align: center;
-    vertical-align: middle;
     color: var(--logo-color);
+}
+header.top a {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 4vw;
+    min-width: 50px;
+
+}
+ 
+aside.info{
+    margin-top: 40px;
+    padding: 20px;
+    background-color: rgba(218, 5, 5, 0.904);
+    border: 1px solid var(--font-title-color);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    color: rgb(240, 239, 239);    
 }
 a.login{
     text-decoration: none;
@@ -67,6 +84,9 @@ a.login:hover{
     color: var(--font-title-color);
     transform: translate(-2px, -2px);
     transition: all 100ms;
+}
+header.top a.login p{
+    color: var(--background-color);
 }
 main.conteiner{
     display: flex;
@@ -106,36 +126,22 @@ fieldset.box-data{
     border: 1px solid var(--background-color);
     border-radius: 10px;
     min-width: 400px;
-    box-shadow: 7px 1px 8px 1px var(--background-color);
 }
-input#password{
+input#password, input#matricula{
     margin: 10px;
+    padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background-color: transparent;
-    border: 0px solid transparent;
+    border: none;
     border-bottom: 1px solid var(--text-color);
 }
-input#password:active{
-    background-color: transparent;
-    border: 0px solid transparent;
-    border-bottom: 1px solid var(--text-color);
+input#password:focus, input#matricula:focus{
+    outline: none;
+    cursor:text;
 }
 label{
     font-size: 1.3rem;
-}
-input#matricula{
-    margin: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    background-color: transparent;
-    border: 0px solid transparent;
-    border-bottom: 1px solid var(--text-color);
-}
-input#matricula:active{
-    background-color: transparent;
-    border: 0px solid transparent;
-    border-bottom: 1px solid var(--text-color);
 }
 div.bt-box{
     margin: 10px;
@@ -145,31 +151,50 @@ div.bt-box{
     justify-content: space-between;
     padding: 5px;
 }
-input#submit{
+button#submit{
     background-color: transparent;
     padding: 2px 10px;
     font-size: 1em;
 }
-input#submit:hover{
+button#submit:hover{
     background-color: var(--background-color);
     border-color: var(--font-title-color);
     transform: translate(-1px, -1px);
     transition: all 0.1s;
 }
-button{
+button#esqueci-senha{
     background-color: transparent;
     color: var(--font-title-color);
     margin: 20px 0px;
     border: 0px solid transparent;
 }
-button:hover{
+button#esqueci-senha:hover{
     color: var(--secondary-color);
     transition: all 100ms;
 }
-
-footer.info{
+aside.links{
+    padding: 10px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+aside.links p{
+    color: var(--background-color);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+aside.links > p > a > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+aside.links > p > a > img.minha_image{
+    filter: drop-shadow(-1px -1.5px 15px #f8df02);
+}
+aside.links > p > a > img.cetreina{
+    filter: drop-shadow(-1px -1.5px 15px #ff6600);
+    
 }
 footer.rodape{
     display: flex;
@@ -178,7 +203,18 @@ footer.rodape{
     justify-content: center;
     background-color: var(--secondary-color);
 }
-@media screen and (min-width: 800px) {
+}
+@media (min-width: 750) and (max-width: 1100){
+    html{
+        background-color: none;
+        background-image: url('../images/fundo-tablet.jpg');
+    }
+    img.logo{
+        width: 150px;
+    }
+}
+
+@media (min-width: 1100px) {
     html{
         background-image: None;
         background-color: var(--primary-color);

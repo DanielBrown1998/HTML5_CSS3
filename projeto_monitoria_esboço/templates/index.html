@@ -10,43 +10,47 @@
 <body>
     <header class="top">
         <h2>UERJ-ZO</h2>
-        <a href="." target="_self" class="login">Login</a>
+        <a href="index.html" target="_self" class="login"><p>Login</p></a>
     </header>
     <main class="conteiner">
         <header class="title">
             <h1>Monitoria Arquitetura de Computadores</h1>
         </header>
-        <img src="../images/logomarca-uerj.png" class="logo" alt="logomarca da uerj">
+        <a href="https://www.uerj.br" target="_blank"><img src="../images/logomarca-uerj.png" class="logo" alt="logomarca da uerj"></a>
+        <aside class="info">
+            Fora do período de solicitações da monitoria!!!
+        </aside>
         <section class="content">
             <fieldset class="box-data">
-                <form action="#" method="post">
-                <div class="matricula">
+                <form action="" method="post">
+                <div class="div-matricula">
                     <label for="matricula">
                     Matricula:</label><br>
                     <input type="text" id="matricula" name="matricula"
                     maxlength="12"
-                    required>
+                    required autofocus autocomplete="off">
                 </div>
-                <div class="password">
+                <div class="div-password">
                     <label for="password">Senha:</label><br>
                     <input type="password" id="password" name="password"
                     required>
                 </div>
                 <div class="bt-box">
-                    <input type="submit" id= "submit" value="Entrar">
-                    <button type="button">Esqueci minha senha</button>
+                    <button id= "submit" value="Entrar" disabled>Entrar</button>
+                    <button type="button" id="esqueci-senha" disabled>Esqueci minha senha</button>
                 </div>
                 </form>
             </fieldset>
-            <p class="info"></p>
         </section>
-        <footer class="info">
-            Esta página é apenas um protótipo de um projeto
-        </footer>
+        <p>Esta página é apenas um protótipo de um projeto</p>
     </main>
+    <aside class="links">
+        <p><a href="https://github.com/DanielBrown1998" target="_blank"><img class="minha_image" src="../images/minha_imagem.jpg" alt="imagem de perfil Daniel Brown"></a>@Daniel Brown</p>
+        <p><a href="https://www.cetreina.uerj.br/" target="_blank"><img class="cetreina" src="../images/images.png" alt="logo do cetreina"></a>@Cetreina</p>
+    </aside>
     <footer class="rodape">
-
+        <p>&copy; 2024 - <a href="https://www.uerj.br/campus/campus-zona-oeste/" target="_blank">UERJ-ZO</a></p>
+        <p>Monitor: Daniel Brown</p>
     </footer>
 </body>
 </html>
-
