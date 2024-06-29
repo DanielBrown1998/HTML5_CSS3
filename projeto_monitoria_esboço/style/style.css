@@ -13,7 +13,7 @@
     --background-color: #cac6c6a8;
     --text-color: #131212;
     --font-title-color: #fff;
-    --font-color: #141414;
+    --fieldset-color: #000000af;
     --logo-color: rgba(250, 6, 6, 0.774);
 }
 *{
@@ -122,7 +122,8 @@ fieldset.box-data{
     justify-content: center;
     justify-items: center;
     padding: 20px;
-    background-color: var(--background-color);
+    color: var(--font-title-color);
+    background-color: var(--fieldset-color);
     border: 1px solid var(--background-color);
     border-radius: 10px;
     min-width: 400px;
@@ -134,7 +135,7 @@ input#password, input#matricula{
     text-align: center;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--font-title-color);
 }
 input#password:focus, input#matricula:focus{
     outline: none;
@@ -205,7 +206,7 @@ footer.rodape{
 }
 }
 
-@media (min-width: 750px) {
+@media (min-width: 1200px) {
     html{
         background-image: none;
         background-color: var(--primary-color);

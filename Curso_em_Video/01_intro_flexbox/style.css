@@ -14,13 +14,44 @@
     padding: var(--space);
     display: flex;
     flex: auto;
-    background-color: aqua;
     justify-content: space-between;
     font-family: var(--font_principal);
 }
 
 .item{
     padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.692);
     border-radius: var(--space);
-    background-color: darkblue;
+}
+main{
+    margin-top: 5vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+header{
+    text-align: center;
+}
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+article{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.767);
+    padding: 10px;
+    margin: 10px;
+}
+footer{
+    display: block;
+    text-align: center;
+    position: fixed;
+    width: 100vw;
+    bottom: 0;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0.658);
 }
