@@ -15,6 +15,7 @@
     padding: var(--space);
     display: flex;
     flex: auto;
+    align-items: center;
     justify-content: space-around;
     font-family: var(--font_principal);
     position: sticky;
@@ -24,6 +25,7 @@
 }
 .item{
     display: flex;   
+    align-items: center;
 }
 .item a {
     text-decoration: none;
