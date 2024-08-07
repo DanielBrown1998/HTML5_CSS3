@@ -1,0 +1,22 @@
+p span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+p a {
+  text-decoration: none;
+}
+
+p span {
+  background-color: red;
+}
+
+p a {
+  color: blue;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: rgb(26, 25, 25);
+}
+
+/*# sourceMappingURL=style.css.map */
