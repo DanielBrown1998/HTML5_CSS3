@@ -4,14 +4,17 @@ p span {
 }
 p a {
   text-decoration: none;
+  border: 1px solid white;
+  border-radius: 1vh;
+  background-color: none;
+  padding: 10px;
 }
-
-p span {
-  background-color: red;
-}
-
-p a {
-  color: blue;
+p a:hover {
+  color: white;
+  background-color: orange;
+  border: 1px solid orangered;
+  border-radius: 1vh;
+  transition: all ease-in 300ms;
 }
 
 body {
